@@ -5,6 +5,9 @@
 - good morning
 - good evening
 - hey there
+- whats up
+- how are you
+- yo
 
 ## intent:goodbye
 - bye
@@ -18,6 +21,8 @@
 - of course
 - that sounds good
 - correct
+- absolutely
+- that's correct
 
 ## intent:deny
 - no
@@ -26,31 +31,29 @@
 - don't like that
 - no way
 - not really
+- no, I don't believe so
 
-## intent:mood_great
-- perfect
-- very good
-- great
-- amazing
-- wonderful
-- I am feeling very good
-- I am great
-- I'm good
+## intent: ask_weather 
 
-## intent:mood_unhappy
-- sad
-- very sad
-- unhappy
-- bad
-- very bad
-- awful
-- terrible
-- not very good
-- extremely sad
-- so sad
+## intent: ask_about_mike
+
+## intent: ask_experience
+
+## intent: ask_skill_set
+
+## intent: ask_desired_roles
+
+## intent: ask_contact_info
+
+## intent: ask_capabilities
+
 
 ## intent:bot_challenge
 - are you a bot?
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
+
+
+
+
