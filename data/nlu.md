@@ -66,17 +66,87 @@
 - what experience does mike have as a data scientist
 - what experience does mike have as an engineer
 - tell me about mike's work history
-- what kind of experience does mike have
-- 
-
+- what kind of work experience does mike have
+- mike work experience
+- mike resume summary
+- give me a summary of mike's employment history
+- work history
+- experience
+- where has mike worked
+- what experience does mike have
+- tell me about mike's experience
+- how many years of experience does mike have
+- leadership experience
+- does mike have leadership experience
+- has mike led a team before
+- does mike have management experience
 
 ## intent: ask_skill_set
 
+- what is mike's best skill
+- tell me about mike's technical skills
+- skill set
+- technical skills
+- certifications
+- mike's technical abilities
+- mike top technical skills
+- technical abilities
+- technical aptitudes
+- what programming languages does Mike know
+- does mike know machine learning
+- what is mike's level of education
+- what degree does mike have
+- does mike have a degree
+- college degree
+- where did mike attend college
+- where university did mike go to
+
 ## intent: ask_desired_roles
+
+- what kind of roles is mike looking for
+- what jobs is he targeting
+- desired compensation
+- is mike a senior data scientist
+- is mike senior level
+- what sort of job is mike targeting
+- what sorts of jobs is he looking for
+- what types of roles in he open to
+- tell me about the types of jobs mike is targeting
 
 ## intent: ask_contact_info
 
+- what is mike's contact info
+- mike email
+- mike phone number
+- mike resume
+- mike github
+- mike linkedin
+- mike contact info
+- how do i get in touch with mike
+- how do i get in contact with mike
+- give me mike's contact info
+- give me mike's resume
+- show me mike's contact info
+- show me mike's full resume
+- mike cv
+- show me mike's email, please
+- call mike
+- email mike
+- send me his info
+- give me his info
+- show me contact info
+- show me his resume
+- resume 
+
 ## intent: ask_capabilities
+- what can you do
+- tell me about my options
+- what are my options
+- what is your functionality
+- what are some of the things you can do 
+- what can you tell me
+- how do you work
+- what are your capabilities
 
 
 ## intent:bot_challenge
