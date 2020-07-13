@@ -82,7 +82,6 @@
 - does mike have management experience
 
 ## intent: ask_skill_set
-
 - what is mike's best skill
 - tell me about mike's technical skills
 - skill set
@@ -102,7 +101,6 @@
 - where university did mike go to
 
 ## intent: ask_desired_roles
-
 - what kind of roles is mike looking for
 - what jobs is he targeting
 - desired compensation
@@ -114,7 +112,6 @@
 - tell me about the types of jobs mike is targeting
 
 ## intent: ask_contact_info
-
 - what is mike's contact info
 - mike email
 - mike phone number
@@ -148,13 +145,8 @@
 - how do you work
 - what are your capabilities
 
-
 ## intent:bot_challenge
 - are you a bot?
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
-
-
-
-
