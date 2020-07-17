@@ -31,8 +31,14 @@ responses:
   utter_return_greeting:
   - text: "Hey! How are you?"
 
+  utter_explain_bot:
+    - text: "I'm a chatbot powered by Python, TensorFlow, and the Rasa framework. Mike built me to showcase his talents and experience, and help him look for his next role."
+
+  utter_respond_about_mike:
+    - text: "I can tell you a lot about Mike. What would you like to know?"
+
   utter_explain_functionality:
-    - text: "I'm a chatbot powered by the Rasa framework. I'm powered by Deep Learning models under the hood, with Conditional Random Fields for Entity Extraction. Mike built me to showcase his talents and experience, and help him look for his next role. \n I'm able to tell you facts about Mike such as his:
+    - text: " I'm able to tell you facts about Mike such as his:
 
     - Work Experience
     - Skill Set and Certifications
