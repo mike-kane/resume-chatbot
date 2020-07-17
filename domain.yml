@@ -3,17 +3,45 @@ intents:
   - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
+  - ask_weather
+  - ask_about_mike
+  - ask_experience
+  - ask_skill_set
+  - ask_desired_roles
+  - ask_contact_info
+  - ask_capabilities
   - bot_challenge
+  - inform
+
+entities:
+  - location
+  - email
+
+slots:
+  location:
+    type: text
+  email:
+    type: text
+
+actions:
+  -action_email_resume
+  -action_get_weather
 
 responses:
-  utter_greet:
+  utter_return_greeting:
   - text: "Hey! How are you?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_explain_functionality:
+    - text: "I'm a chatbot powered by the Rasa framework. I'm powered by Deep Learning models under the hood, with Conditional Random Fields for Entity Extraction. Mike built me to showcase his talents and experience, and help him look for his next role. \n I'm able to tell you facts about Mike such as his:
+
+    - Work Experience
+    - Skill Set and Certifications
+    - Roles he's targeting
+    - Contact info, such as email and github
+
+  I'm also capable of interactive tasks, like telling you the weather, or emailing you Mike's resume.
+
+  What can I help you with?"
 
   utter_did_that_help:
   - text: "Did that help you?"
@@ -22,10 +50,73 @@ responses:
   - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Goodbye!"
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_ask_location:
+    - text: "Where are you located?"
+
+  utter_work_experience:
+    - text: "Here's a quick rundown of Mike's work experience:
+
+    -(1/20 - present) Mike has been an independent consultant for Machine Learning Engineering and Data Science projects since January 2020. In that time, he's helped startups with challenging tasks like designing an MVP for a semantic search engine aimed at helping lawyers with the E-Discovery process. He's also taught highly rated seminars on Machine Learning Engineering and Deep Learning.
+
+    -(4/18 - 1/20) Before Mike went independent, he was the Lead Data Scientist for the Enterprise Division at the Flatiron School/WeWork . Here, he managed a technical team of 2-4 data scientists, consulted multiple Fortune 100 companies on technical solutions (including building out MVPs), and trained client teams on topic such as Deep Learning for Fraud Detection, automating NLP pipelines for Forensic Accounting Teams, and built Data Science onboarding and/or retraining programs for some of the largest banks and oil companies in the world.
+
+    -(9/15 - 4/18) Before joining the Flatiron School\\WeWork, Mike worked for Make School, where he designed, created, and helped teach their Data Science specialization. He also helped them become a fully accredited degree-granting university.
+
+    -Before joining the tech world, Mike spent 7 years as an educator in FL. He spent most of those years in the classroom teaching AP English Literature, as well as Introduction to Programming in Python."
+
+  utter_skill_set:
+    text: "Here are some quick facts about Mike's skill set:
+
+    -Mike graduated from Syracuse University in 2019 with a M.S. in Applied Data Science. (GPA 3.78)
+
+    - Mike has 7+ years of experience with programming in Python.
+
+    - Mike excels at Machine Learning--especially Deep Learning and NLP. He has 3 years of experience with Tensorflow (1 & 2) Scikit-Learn, and NLTK. He also has significant experience with OpenCV and HuggingFace.
+
+  Here's a list of Mike's experience and certifications with various technologies:
+
+  - SQL Variants (4+ years)
+  - NoSQL (MongoDB 3 years, Hadoop/PySpark 2 years)
+  - Docker (1.5 years)
+  - Python (7+ years)
+  - Anaconda (4+ years)
+  - Numpy/Pandas/Matplotlib/Seaborn (4+ years)
+  - TensorFlow (3 years)
+  - PyTorch (1 year)
+  - Scikit-Learn (4.5 years)
+  - NLTK (3 years)
+  - Swift (3 years)
+  - HuggingFace/Transformer Models(~1 year)
+  - OpenCV (1.5 years)
+  - AWS/Azure/GCP (1.5 years, 1 year, 1 year)
+  - AWS Cloud Practitioner Certification
+  - Coursera Deep Learning Specialization
+  - Coursera TensorFlow in Practice Specialization
+  "
+
+  utter_other_info_desired:
+    - text: "What else can I tell you about Mike? I can tell you about his work experience, skill set, the types of roles he's targeting, or provide his contact info/resume. I can also tell you the weather in your area, because Mike wanted an excuse to build some custom functionality into this chatbot.
+
+    How else can I help you?"
+
+  utter_email:
+    - text: "Mike can be reached at guido.vanrawesome@gmail.com"
+
+  utter_github:
+    - text: "Mike's github link is www.github.com/mike-kane"
+
+  utter_desired_roles:
+    - text: "Mike is primarily interested in roles as a Data Scientist or Machine Learning Engineer".
+
+  utter_resume_desired:
+    - text: "Would you like me to email Mike's resume to you?"
+
+  utter_ask_email:
+    - text: "Great! What email address should I send it to?"
+
+  utter
 
 session_config:
   session_expiration_time: 60
