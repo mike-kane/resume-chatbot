@@ -101,6 +101,8 @@
 - college degree
 - where did mike attend college
 - where university did mike go to
+- tell me about mike's skill set
+
 
 ## intent: ask_desired_roles
 - what kind of roles is mike looking for

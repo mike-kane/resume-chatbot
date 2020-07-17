@@ -23,6 +23,7 @@ class ActionSendEmail(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         # TODO: complete ActionSendEmail class
+        # TODO: configure endpoints for custom actions
 
         email = tracker.get_slot('email')
         dispatcher.utter_message(text="Sent!")
