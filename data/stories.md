@@ -1,6 +1,6 @@
 ## greet
 * greet
-  - utter_greet
+  - utter_return_greeting
 
 ## say goodbye
 * goodbye
@@ -57,14 +57,14 @@
     - utter_email
     - utter_github
     - utter_resume_desired
-  * inform{"resume_desired":False}
+  * inform{"resume_desired":false}
   
 ## ask contact info + request resume
   * ask_contact_info
     - utter_email
     - utter_github
     - utter_resume_desired
-  * inform{"resume_desired":True}
+  * inform{"resume_desired":true}
     - utter_ask_email
   * inform{"email":"mediocrecomedy@gmail.com"}
     - action_email_resume
@@ -82,7 +82,7 @@
     - utter_email
     - utter_github
     - utter_resume_desired
-  * inform{"resume_desired":False}
+  * inform{"resume_desired":false}
   
 ## greet + bot challenge + ask work experience + ask skills + ask contact info + email resume
   * greet
@@ -100,7 +100,7 @@
     - utter_email
     - utter_github
     - utter_resume_desired
-  * inform{"resume_desired":True}
+  * inform{"resume_desired":true}
     - utter_ask_email
   * inform{"email":"guido.vanrawesome@gmail.com"}
     - action_email_resume
@@ -119,7 +119,7 @@
     - utter_email
     - utter_github
     -utter_resume_desired
-  * inform{"resume_desired":True}
+  * inform{"resume_desired":true}
     - utter_ask_email
   * inform{"email":"guido.vanrawesome@gmail.com"}
     - action_email_resume
@@ -132,7 +132,7 @@
     - utter_email
     - utter_github
     -utter_resume_desired
-  * inform{"resume_desired":True}
+  * inform{"resume_desired":true}
     - utter_ask_email
   * inform{"email":"guido.vanrawesome@gmail.com"}
     - action_email_resume

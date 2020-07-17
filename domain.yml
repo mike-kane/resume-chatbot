@@ -5,7 +5,7 @@ intents:
   - deny
   - ask_weather
   - ask_about_mike
-  - ask_experience
+  - ask_work_experience
   - ask_skill_set
   - ask_desired_roles
   - ask_contact_info
@@ -27,8 +27,22 @@ slots:
     type: bool
 
 actions:
-  -action_email_resume
-  -action_get_weather
+  - utter_return_greeting
+  - utter_explain_bot
+  - utter_respond_about_mike
+  - utter_explain_functionality
+  - utter_goodbye
+  - utter_ask_location
+  - utter_work_experience
+  - utter_skill_set
+  - utter_other_info_desired
+  - utter_email
+  - utter_github
+  - utter_desired_roles
+  - utter_resume_desired
+  - utter_ask_email
+  - action_email_resume
+  - action_get_weather
 
 responses:
   utter_return_greeting:
@@ -70,7 +84,7 @@ responses:
     -Before joining the tech world, Mike spent 7 years as an educator in FL. He spent most of those years in the classroom teaching AP English Literature, as well as Introduction to Programming in Python."
 
   utter_skill_set:
-    text: "Here are some quick facts about Mike's skill set:
+    - text: "Here are some quick facts about Mike's skill set:
 
     -Mike graduated from Syracuse University in 2019 with a M.S. in Applied Data Science. (GPA 3.78)
 

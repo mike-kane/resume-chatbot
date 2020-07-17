@@ -62,7 +62,7 @@
 - tell me more about mike
 - what else about mike
 
-## intent: ask_experience
+## intent: ask_work_experience
 - what is mike's work history
 - what is mike's work experience
 - what experience does mike have as a data scientist
