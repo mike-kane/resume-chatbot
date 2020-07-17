@@ -57,4 +57,88 @@
     - utter_email
     - utter_github
     - utter_resume_desired
-  * inform
+  * inform{"resume_desired":False}
+  
+## ask contact info + request resume
+  * ask_contact_info
+    - utter_email
+    - utter_github
+    - utter_resume_desired
+  * inform{"resume_desired":True}
+    - utter_ask_email
+  * inform{"email":"mediocrecomedy@gmail.com"}
+    - action_email_resume
+    
+## greet + ask functionality + ask work experience + ask contact info
+  * greet
+    - utter_return_greeting
+  * bot_challenge
+    - utter_explain_bot
+    - utter_explain_functionality
+  * ask_work_experience
+    - utter_work_experience
+    - utter_other_info_desired
+  * ask_contact_info
+    - utter_email
+    - utter_github
+    - utter_resume_desired
+  * inform{"resume_desired":False}
+  
+## greet + bot challenge + ask work experience + ask skills + ask contact info + email resume
+  * greet
+     - utter_return_greeting
+  * bot_challenge
+    - utter_explain_bot
+    - utter_explain_functionality
+  * ask_work_experience
+    - utter_work_experience
+    - utter_other_info_desired
+  * ask_skill_set
+    - utter_skill_set
+    - utter_other_info_desired
+  * ask_contact_info
+    - utter_email
+    - utter_github
+    - utter_resume_desired
+  * inform{"resume_desired":True}
+    - utter_ask_email
+  * inform{"email":"guido.vanrawesome@gmail.com"}
+    - action_email_resume
+
+## bot_challenge + ask skills + ask work experience + ask contact info + email resume
+  * bot_challenge
+    - utter_explain_bot
+    - utter_explain_functionality
+  * ask_skill_set
+    - utter_skill_set
+    - utter_other_info_desired
+  * ask_work_experience
+    - utter_work_experience
+    - utter_other_info_desired
+  * ask_contact_info
+    - utter_email
+    - utter_github
+    -utter_resume_desired
+  * inform{"resume_desired":True}
+    - utter_ask_email
+  * inform{"email":"guido.vanrawesome@gmail.com"}
+    - action_email_resume
+
+## ask about mike + ask contact info + email resume + ask work experience + goodbye 
+  * bot_challenge
+    - utter_explain_bot
+    - utter_explain_functionality
+  * ask_contact_info
+    - utter_email
+    - utter_github
+    -utter_resume_desired
+  * inform{"resume_desired":True}
+    - utter_ask_email
+  * inform{"email":"guido.vanrawesome@gmail.com"}
+    - action_email_resume
+  * ask_work_experience
+    - utter_work_experience
+    - utter_other_info_desired
+  * deny
+    - utter_goodbye
+    
