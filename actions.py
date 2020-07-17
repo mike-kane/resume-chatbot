@@ -22,6 +22,8 @@ class ActionSendEmail(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
+        # TODO: complete ActionSendEmail class
+
         email = tracker.get_slot('email')
         dispatcher.utter_message(text="Sent!")
 
