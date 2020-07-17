@@ -16,12 +16,15 @@ intents:
 entities:
   - location
   - email
+  - resume_desired
 
 slots:
   location:
     type: text
   email:
     type: text
+  resume_desired:
+    type: bool
 
 actions:
   -action_email_resume
@@ -48,12 +51,6 @@ responses:
   I'm also capable of interactive tasks, like telling you the weather, or emailing you Mike's resume.
 
   What can I help you with?"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
 
   utter_goodbye:
   - text: "Goodbye!"
