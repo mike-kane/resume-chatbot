@@ -42,7 +42,9 @@
 - what is the weather forecast for my city
 - is it going to rain today
 - tell me the forecast for my city
-
+- tell me the weather for [San Francisco](location)
+- what's the weather in [London](location)
+- is it raining in [Ocala](location)
 
 ## intent: ask_about_mike
 - tell me about mike
@@ -150,6 +152,9 @@
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
+- what are you?
+- tell me about yourself
+- are you a robot
 
 ## intent: inform
 - [yes](resume_desired)
