@@ -16,7 +16,7 @@ from rasa_sdk.executor import CollectingDispatcher
 class ActionSendEmail(Action):
 
     def name(self) -> Text:
-        return "action_send_email"
+        return "action_email_resume"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
