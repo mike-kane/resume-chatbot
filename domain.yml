@@ -111,7 +111,7 @@ responses:
     - text: "Mike's github link is www.github.com/mike-kane"
 
   utter_desired_roles:
-    - text: "Mike is primarily interested in roles as a Data Scientist or Machine Learning Engineer".
+    - text: "Mike is primarily interested in roles as a Data Scientist or Machine Learning Engineer."
 
   utter_resume_desired:
     - text: "Would you like me to email Mike's resume to you?"
@@ -119,7 +119,6 @@ responses:
   utter_ask_email:
     - text: "Great! What email address should I send it to?"
 
-  utter
 
 session_config:
   session_expiration_time: 60
