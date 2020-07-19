@@ -52,14 +52,14 @@ responses:
     - text: "I can tell you a lot about Mike. What would you like to know?"
 
   utter_explain_functionality:
-    - text: " I'm able to tell you facts about Mike such as his:
+    - text: " I'm able to tell you facts about Mike such as his: \n  \n
 
-    - Work Experience
-    - Skill Set and Certifications
-    - Roles he's targeting
-    - Contact info, such as email and github
+    - Work Experience \n
+    - Skill Set and Certifications \n
+    - Roles he's targeting \n
+    - Contact info, such as email and github \n  \n
 
-  I'm also capable of interactive tasks, like telling you the weather, or emailing you Mike's resume.
+  I'm also capable of interactive tasks, like telling you the weather, or emailing you Mike's resume. \n  \n
 
   What can I help you with?"
 
@@ -70,48 +70,47 @@ responses:
     - text: "Where are you located?"
 
   utter_work_experience:
-    - text: "Here's a quick rundown of Mike's work experience:
+    - text: "Here's a quick rundown of Mike's work experience: \n  \n
 
-    -(1/20 - present) Mike has been an independent consultant for Machine Learning Engineering and Data Science projects since January 2020. In that time, he's helped startups with challenging tasks like designing an MVP for a semantic search engine aimed at helping lawyers with the E-Discovery process. He's also taught highly rated seminars on Machine Learning Engineering and Deep Learning.
+    -(1/20 - present) Mike has been an independent consultant for Machine Learning Engineering and Data Science projects since January 2020. In that time, he's helped startups with challenging tasks like designing an MVP for a semantic search engine aimed at helping lawyers with the E-Discovery process. He's also taught highly rated seminars on Machine Learning Engineering and Deep Learning. \n  \n
 
-    -(4/18 - 1/20) Before Mike went independent, he was the Lead Data Scientist for the Enterprise Division at the Flatiron School/WeWork . Here, he managed a technical team of 2-4 data scientists, consulted multiple Fortune 100 companies on technical solutions (including building out MVPs), and trained client teams on topic such as Deep Learning for Fraud Detection, automating NLP pipelines for Forensic Accounting Teams, and built Data Science onboarding and/or retraining programs for some of the largest banks and oil companies in the world.
+    -(4/18 - 1/20) Before Mike went independent, he was the Lead Data Scientist for the Enterprise Division at the Flatiron School/WeWork . Here, he managed a technical team of 2-4 data scientists, consulted multiple Fortune 100 companies on technical solutions (including building out MVPs), and trained client teams on topic such as Deep Learning for Fraud Detection, automating NLP pipelines for Forensic Accounting Teams, and built Data Science onboarding and/or retraining programs for some of the largest banks and oil companies in the world. \n  \n
 
-    -(9/15 - 4/18) Before joining the Flatiron School\\WeWork, Mike worked for Make School, where he designed, created, and helped teach their Data Science specialization. He also helped them become a fully accredited degree-granting university.
+    -(9/15 - 4/18) Before joining the Flatiron School\\WeWork, Mike worked for Make School, where he designed, created, and helped teach their Data Science specialization. He also helped them become a fully accredited degree-granting university. \n  \n
 
     -Before joining the tech world, Mike spent 7 years as an educator in FL. He spent most of those years in the classroom teaching AP English Literature, as well as Introduction to Programming in Python."
 
   utter_skill_set:
-    - text: "Here are some quick facts about Mike's skill set:
+    - text: "Here are some quick facts about Mike's skill set:  \n
+ \n
+    -Mike graduated from Syracuse University in 2019 with a M.S. in Applied Data Science. (GPA 3.78)  \n  \n
 
-    -Mike graduated from Syracuse University in 2019 with a M.S. in Applied Data Science. (GPA 3.78)
+    - Mike has 7+ years of experience with programming in Python. \n  \n
 
-    - Mike has 7+ years of experience with programming in Python.
+    - Mike excels at Machine Learning--especially Deep Learning and NLP. He has 3 years of experience with Tensorflow (1 & 2) Scikit-Learn, and NLTK. He also has significant experience with OpenCV and HuggingFace.  \n  \n
 
-    - Mike excels at Machine Learning--especially Deep Learning and NLP. He has 3 years of experience with Tensorflow (1 & 2) Scikit-Learn, and NLTK. He also has significant experience with OpenCV and HuggingFace.
-
-  Here's a list of Mike's experience and certifications with various technologies:
-
-  - SQL Variants (4+ years)
-  - NoSQL (MongoDB 3 years, Hadoop/PySpark 2 years)
-  - Docker (1.5 years)
-  - Python (7+ years)
-  - Anaconda (4+ years)
-  - Numpy/Pandas/Matplotlib/Seaborn (4+ years)
-  - TensorFlow (3 years)
-  - PyTorch (1 year)
-  - Scikit-Learn (4.5 years)
-  - NLTK (3 years)
-  - Swift (3 years)
-  - HuggingFace/Transformer Models(~1 year)
-  - OpenCV (1.5 years)
-  - AWS/Azure/GCP (1.5 years, 1 year, 1 year)
-  - AWS Cloud Practitioner Certification
-  - Coursera Deep Learning Specialization
-  - Coursera TensorFlow in Practice Specialization
+  Here's a list of Mike's experience and certifications with various technologies: \n \n
+  - SQL Variants (4+ years) \n
+  - NoSQL (MongoDB 3 years, Hadoop/PySpark 2 years)\n
+  - Docker (1.5 years) \n
+  - Python (7+ years) \n
+  - Anaconda (4+ years) \n
+  - Numpy/Pandas/Matplotlib/Seaborn (4+ years) \n
+  - TensorFlow (3 years) \n
+  - PyTorch (1 year) \n
+  - Scikit-Learn (4.5 years) \n
+  - NLTK (3 years) \n
+  - Swift (3 years) \n
+  - HuggingFace/Transformer Models(~1 year) \n
+  - OpenCV (1.5 years) \n
+  - AWS/Azure/GCP (1.5 years, 1 year, 1 year) \n
+  - AWS Cloud Practitioner Certification \n
+  - Coursera Deep Learning Specialization \n
+  - Coursera TensorFlow in Practice Specialization \n
   "
 
   utter_other_info_desired:
-    - text: "What else can I tell you about Mike? I can tell you about his work experience, skill set, the types of roles he's targeting, or provide his contact info/resume. I can also tell you the weather in your area, because Mike wanted an excuse to build some custom functionality into this chatbot.
+    - text: "What else can I tell you about Mike? \n I can tell you about his work experience, skill set, the types of roles he's targeting, or provide his contact info/resume. \n I can also tell you the weather in your area, because Mike wanted an excuse to build some custom functionality into this chatbot.
 
     How else can I help you?"
 
