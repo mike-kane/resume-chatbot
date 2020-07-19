@@ -22,12 +22,12 @@ class ActionSendEmail(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
         email = tracker.get_slot('email')
         email_resume(email)
         dispatcher.utter_message(text="Sent!")
 
         return []
+
 
 class ActionGetWeather(Action):
 
@@ -41,7 +41,8 @@ class ActionGetWeather(Action):
         location = tracker.get_slot('location')
         message = get_weather(location)
         if message is None:
-            dispatcher.utter_message("Oops! Looks like the OpenWeatherAPI couldn't recognize that location. Try you like to try again? Try giving just the name of the city.")
+            dispatcher.utter_message(
+                "Oops! Looks like the OpenWeatherAPI couldn't recognize that location. Try you like to try again? Try giving just the name of the city.")
             tracker.slots.clear()
         else:
             dispatcher.utter_message(text=message)
