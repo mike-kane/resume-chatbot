@@ -159,14 +159,6 @@
 - are you a robot
 
 ## intent: inform
-- [yes](resume_desired)
-- [yes, please](resume_desired)
-- [no](resume_desired)
-- [no thank you](resume_desired)
-- [that won't be necessary](resume_desired)
-- [no thx](resume_desired)
-- [yes thx](resume_desired)
-- [please and thank you](resume_desired)
 - [San Francisco](location)
 - [London](location)
 - I'm in [San Francisco, CA](location)
@@ -177,4 +169,3 @@
 - my email is [mediocrecomedy@gmail.com](email)
 - sure. [guido.vanrawesome@gmail.com](email)
 - here you go. [lisauvaraova@gmail.com](email)
-
