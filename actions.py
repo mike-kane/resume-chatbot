@@ -8,10 +8,10 @@
 # This is a simple example for a custom action which utters "Hello World!"
 
 from typing import Any, Text, Dict, List
-import requests as r
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from weather import get_weather
+from email_resume import email_resume
 
 
 class ActionSendEmail(Action):
@@ -26,6 +26,7 @@ class ActionSendEmail(Action):
         # TODO: complete ActionSendEmail class
 
         email = tracker.get_slot('email')
+        email_resume(email)
         dispatcher.utter_message(text="Sent!")
 
         return []
