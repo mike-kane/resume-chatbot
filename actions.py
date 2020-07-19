@@ -11,6 +11,7 @@ from typing import Any, Text, Dict, List
 import requests as r
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+from weather import get_weather
 
 
 class ActionSendEmail(Action):
@@ -23,7 +24,6 @@ class ActionSendEmail(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         # TODO: complete ActionSendEmail class
-        # TODO: configure endpoints for custom actions
 
         email = tracker.get_slot('email')
         dispatcher.utter_message(text="Sent!")
@@ -39,22 +39,12 @@ class ActionGetWeather(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        with open('secrets.txt', 'r') as f:
-            API_KEY = f.readline()
-
         location = tracker.get_slot('location')
-        url = "https://api.openweathermap.org/data/2.5/weather?q={}&APPID={}&units=imperial".format(location, API_KEY)
-
-        response = r.get(url)
-        response_json = r.json()
-        weather = response_json['weather']
-        description = response_json['weather'][0]['description']
-        temperature = response_json['main']['temp']
-        feels_like = response_json['main']['feels_like']
-        humidity = response_json['main']['humidity']
-
-        message = """Right now in {} you can expect {}. The temperature is {} degrees (F), but it feels like {} with {}% humidity""".format(location, description, temperature, feels_like, humidity)
-
-        dispatcher.utter_message(text=message)
+        message = get_weather(location)
+        if message is None:
+            dispatcher.utter_message("Oops! Looks like the OpenWeatherAPI couldn't recognize that location. Try you like to try again? Try giving just the name of the city.")
+            tracker.slots.clear('location')
+        else:
+            dispatcher.utter_message(text=message)
 
         return []
