@@ -44,7 +44,7 @@ class ActionGetWeather(Action):
         message = get_weather(location)
         if message is None:
             dispatcher.utter_message("Oops! Looks like the OpenWeatherAPI couldn't recognize that location. Try you like to try again? Try giving just the name of the city.")
-            tracker.slots.clear('location')
+            tracker.slots.clear()
         else:
             dispatcher.utter_message(text=message)
 
