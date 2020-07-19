@@ -114,6 +114,9 @@
 - what sorts of jobs is he looking for
 - what types of roles in he open to
 - tell me about the types of jobs mike is targeting
+- what kind of job does is he want
+- what kind of job is he looking for
+- what is he looking for
 
 ## intent: ask_contact_info
 - what is mike's contact info
