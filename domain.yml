@@ -16,15 +16,12 @@ intents:
 entities:
   - location
   - email
-  - resume_desired
 
 slots:
   location:
     type: text
   email:
     type: text
-  resume_desired:
-    type: bool
 
 actions:
   - utter_return_greeting
@@ -46,7 +43,7 @@ actions:
 
 responses:
   utter_return_greeting:
-  - text: "Hey! How are you?"
+  - text: "Hi! Welcome to Mike's Resume Chatbot page."
 
   utter_explain_bot:
     - text: "I'm a chatbot powered by Python, TensorFlow, and the Rasa framework. Mike built me to showcase his talents and experience, and help him look for his next role."
@@ -137,5 +134,3 @@ responses:
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-
-# TODO: fix dialogue flow for requesting resume (change to affirm instead of bool slot)
