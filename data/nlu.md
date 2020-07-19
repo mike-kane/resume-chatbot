@@ -45,6 +45,7 @@
 - tell me the weather for [San Francisco](location)
 - what's the weather in [London](location)
 - is it raining in [Ocala](location)
+- what's the weather in [Petaluma](location)
 
 ## intent: ask_about_mike
 - tell me about mike
@@ -102,7 +103,6 @@
 - where did mike attend college
 - where university did mike go to
 - tell me about mike's skill set
-
 
 ## intent: ask_desired_roles
 - what kind of roles is mike looking for
