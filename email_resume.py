@@ -48,9 +48,4 @@ def email_resume(email_address):
     else:
         print("Invalid Email Address!")
 
-if __name__ == "__main__":
-    import sys
-    test_email = sys.argv[1:]
-    print(email_resume(test_email[0]))
-
 
