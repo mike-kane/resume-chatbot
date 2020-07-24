@@ -10,8 +10,8 @@
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from weather import get_weather
-from email_resume import email_resume
+from actions.weather import get_weather
+from actions.email_resume import email_resume
 
 
 class ActionSendEmail(Action):
