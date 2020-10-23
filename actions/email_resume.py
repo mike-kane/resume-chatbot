@@ -2,19 +2,8 @@ from email_validator import validate_email, EmailNotValidError
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+import os
 
-def _load_secrets():
-    with open("secrets.txt", 'r') as f:
-        secrets = f.readlines()
-
-    secrets_dict = {}
-
-    for line in secrets:
-        key, val = line.split(':')
-        val = val.replace('\n', '')
-        secrets_dict[key] = val
-
-    return secrets_dict
 
 def _is_valid(email_address):
     try:
@@ -24,13 +13,13 @@ def _is_valid(email_address):
     except EmailNotValidError as e:
         return False
 
+
 def email_resume(email_address):
     if _is_valid(email_address):
         mail_content = "TEST EMAIL"
 
-        secrets_dict = _load_secrets()
-        username = secrets_dict['gmail_address']
-        password = secrets_dict['gmail_pw']
+        username = os.environ['GMAIL_ADDRESS']
+        password = os.environ['GMAIL_PW']
 
         message = MIMEMultipart()
         message['From'] = username
