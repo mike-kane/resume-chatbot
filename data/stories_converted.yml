@@ -1,0 +1,173 @@
+version: "2.0"
+stories:
+- story: greet
+  steps:
+  - intent: greet
+  - action: utter_return_greeting
+  - action: utter_explain_functionality
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_explain_functionality
+
+- story: explain_functionality
+  steps:
+  - intent: ask_capabilities
+  - action: utter_explain_functionality
+
+- story: ask weather
+  steps:
+  - intent: ask_weather
+  - action: utter_ask_location
+  - intent: inform
+    entities:
+    - location: San Francisco
+  - action: action_get_weather
+  - intent: goodbye
+  - action: utter_goodbye
+- story: greet + goodbye
+  steps:
+  - intent: greet
+  - action: utter_return_greeting
+  - action: utter_explain_bot
+  - action: utter_explain_functionality
+  - intent: goodbye
+  - action: utter_goodbye
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_explain_bot
+  - action: utter_explain_functionality
+- story: ask about mike
+  steps:
+  - intent: ask_about_mike
+  - action: utter_respond_about_mike
+  - action: utter_explain_functionality
+- story: ask work experience
+  steps:
+  - intent: ask_work_experience
+  - action: utter_work_experience
+  - action: utter_other_info_desired
+- story: ask skill set
+  steps:
+  - intent: ask_skill_set
+  - action: utter_skill_set
+  - action: utter_other_info_desired
+- story: ask desired roles
+  steps:
+  - intent: ask_desired_roles
+  - action: utter_desired_roles
+  - action: utter_other_info_desired
+- story: '* ask contact info + no resume'
+  steps:
+  - intent: ask_contact_info
+  - action: utter_email
+  - action: utter_github
+  - action: utter_resume_desired
+  - intent: deny
+  - action: utter_other_info_desired
+- story: ask contact info + request resume
+  steps:
+  - intent: ask_contact_info
+  - action: utter_email
+  - action: utter_github
+  - action: utter_resume_desired
+  - intent: affirm
+  - action: utter_ask_email
+  - intent: inform
+    entities:
+    - email: mediocrecomedy@gmail.com
+  - action: action_email_resume
+  - action: utter_other_info_desired
+- story: greet + ask functionality + ask work experience + ask contact info
+  steps:
+  - intent: greet
+  - action: utter_return_greeting
+  - intent: bot_challenge
+  - action: utter_explain_bot
+  - action: utter_explain_functionality
+  - intent: ask_work_experience
+  - action: utter_work_experience
+  - action: utter_other_info_desired
+  - intent: ask_contact_info
+  - action: utter_email
+  - action: utter_github
+  - action: utter_resume_desired
+  - intent: deny
+  - action: utter_other_info_desired
+- story: greet + bot challenge + ask work experience + ask skills + ask contact info + email resume
+  steps:
+  - intent: greet
+  - action: utter_return_greeting
+  - intent: bot_challenge
+  - action: utter_explain_bot
+  - action: utter_explain_functionality
+  - intent: ask_work_experience
+  - action: utter_work_experience
+  - action: utter_other_info_desired
+  - intent: ask_skill_set
+  - action: utter_skill_set
+  - action: utter_other_info_desired
+  - intent: ask_contact_info
+  - action: utter_email
+  - action: utter_github
+  - action: utter_resume_desired
+  - intent: affirm
+  - action: utter_ask_email
+  - intent: inform
+    entities:
+    - email: guido.vanrawesome@gmail.com
+  - action: action_email_resume
+  - action: utter_other_info_desired
+  - intent: deny
+  - action: utter_goodbye
+- story: bot_challenge + ask skills + ask work experience + ask contact info + email resume
+  steps:
+  - intent: bot_challenge
+  - action: utter_explain_bot
+  - action: utter_explain_functionality
+  - intent: ask_skill_set
+  - action: utter_skill_set
+  - action: utter_other_info_desired
+  - intent: ask_work_experience
+  - action: utter_work_experience
+  - action: utter_other_info_desired
+  - intent: ask_contact_info
+  - action: utter_email
+  - action: utter_github
+  - action: utter_resume_desired
+  - intent: affirm
+  - action: utter_ask_email
+  - intent: inform
+    entities:
+    - email: guido.vanrawesome@gmail.com
+  - action: action_email_resume
+  - action: utter_other_info_desired
+  - intent: goodbye
+  - action: utter_goodbye
+- story: ask about mike + ask contact info + email resume + ask work experience + goodbye
+  steps:
+  - intent: bot_challenge
+  - action: utter_explain_bot
+  - action: utter_explain_functionality
+  - intent: ask_contact_info
+  - action: utter_email
+  - action: utter_github
+  - action: utter_resume_desired
+  - intent: affirm
+  - action: utter_ask_email
+  - intent: inform
+    entities:
+    - email: guido.vanrawesome@gmail.com
+  - action: action_email_resume
+  - intent: ask_work_experience
+  - action: utter_work_experience
+  - action: utter_other_info_desired
+  - intent: deny
+  - action: utter_goodbye
