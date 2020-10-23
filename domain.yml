@@ -41,7 +41,7 @@ responses:
   utter_goodbye:
   - text: Goodbye!
   utter_ask_location:
-  - text: Where are you located?
+  - text: What zipcode would you like the weather report for?
   utter_work_experience:
   - text: "Here's a quick rundown of Mike's work experience: \n  \n\n-(1/20 - present)\
       \ Mike has been an independent consultant for Machine Learning Engineering and\

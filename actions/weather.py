@@ -1,11 +1,12 @@
 import requests as r
+import os
 
 
-def get_weather(location):
-    with open('secrets.txt', 'r') as f:
-        api_key = f.readline()
+def get_weather(zipcode):
 
-    url = "https://api.openweathermap.org/data/2.5/weather?q={}&APPID={}&units=imperial".format(location, api_key)
+    api_key = os.environ['WEATHER_API_KEY']
+
+    url = "https://api.openweathermap.org/data/2.5/weather?zip={},us&APPID={}&units=imperial".format(zipcode, api_key)
 
     response = r.get(url)
     if response.status_code == 200:
@@ -17,8 +18,8 @@ def get_weather(location):
         humidity = response_json['main']['humidity']
 
         message = """Right now in {} you can expect {}. The temperature is {} degrees (F), but it feels like {} with {}% humidity""".format(
-            location, description, temperature, feels_like, humidity)
+            zipcode, description, temperature, feels_like, humidity)
     else:
-        message = None
+        message = "API call failed! Status code: {}".format(response.status_code)
 
     return message
