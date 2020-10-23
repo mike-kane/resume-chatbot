@@ -162,10 +162,10 @@
 - are you a robot
 
 ## intent: inform
-- [San Francisco](location)
-- [London](location)
-- I'm in [San Francisco, CA](location)
-- [Ocala, FL](location)
+- [34471](location)
+- [94954](location)
+- I'm in [34471](location)
+- my zipcode is [00000](location)
 - [mediocrecomedy@gmail.com](email)
 - [guido.vanrawesome@gmail.com](email)
 - [mike@perceptronconsulting.ai](email)
