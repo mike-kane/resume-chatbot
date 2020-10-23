@@ -27,7 +27,7 @@ stories:
   - action: utter_ask_location
   - intent: inform
     entities:
-    - location: San Francisco
+    - location: 34471
   - action: action_get_weather
   - intent: goodbye
   - action: utter_goodbye
